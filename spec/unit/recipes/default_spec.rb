@@ -16,5 +16,9 @@ describe 'my_hostname::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'includes the hostname recipe' do
+      expect(chef_run).to include_recipe 'hostname::default'
+    end
   end
 end

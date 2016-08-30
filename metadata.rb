@@ -6,6 +6,8 @@ description 'Installs/Configures my_hostname'
 long_description 'Installs/Configures my_hostname'
 version '0.1.0'
 
+depends 'hostname'
+
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link
 # issues_url 'https://github.com/<insert_org_here>/my_hostname/issues' if respond_to?(:issues_url)
